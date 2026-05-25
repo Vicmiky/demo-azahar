@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="128" viewBox="0 0 430 128" fill="none">
+  <g>
+    <circle cx="54" cy="55" r="35" fill="#E9EFE4"/>
+    <path d="M53.8 82C42.6 68.4 42.4 51.7 54.2 33.1C66.1 51.5 65.9 68.3 53.8 82Z" fill="none" stroke="#6F8B6A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M54 62C40.8 61.3 30.5 54.5 23.2 41.6C39.2 40.2 49.9 46.9 54 62Z" fill="none" stroke="#6F8B6A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M54 62C67.2 61.3 77.5 54.5 84.8 41.6C68.8 40.2 58.1 46.9 54 62Z" fill="none" stroke="#6F8B6A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 91H76" stroke="#C9B79C" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="114" y="55" fill="#2F3A32" font-family="Georgia, 'Times New Roman', serif" font-size="37" font-weight="700">Azahar</text>
+  <text x="116" y="86" fill="#6F8B6A" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">de Concha Muñoz</text>
+</svg>
