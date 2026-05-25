@@ -59,3 +59,9 @@ if (!reduceMotion) {
 } else {
   document.querySelectorAll(".reveal").forEach((item) => item.classList.add("visible"));
 }
+
+
+/* Pulido final: marca de carga para transiciones suaves */
+window.addEventListener("load", () => {
+  document.documentElement.classList.add("is-ready");
+});

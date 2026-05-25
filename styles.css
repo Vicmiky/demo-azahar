@@ -1122,3 +1122,431 @@ section {
     height: 58px;
   }
 }
+
+/* =========================================================
+   Pulido final premium — sin tocar estructura ni logo
+   ========================================================= */
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.hero {
+  padding-top: clamp(64px, 8vw, 94px);
+}
+
+.hero-grid {
+  gap: clamp(48px, 7vw, 84px);
+}
+
+.hero-copy {
+  position: relative;
+}
+
+.hero-copy::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: -26px;
+  width: 78px;
+  height: 78px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(201, 183, 156, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.hero-text {
+  max-width: 590px;
+  font-size: clamp(1.05rem, 1.4vw, 1.17rem);
+}
+
+.hero-actions {
+  align-items: center;
+}
+
+.hero-visual {
+  perspective: 1100px;
+}
+
+.hero-photo-main {
+  position: relative;
+  isolation: isolate;
+  box-shadow:
+    0 34px 90px rgba(47, 58, 50, 0.15),
+    0 12px 28px rgba(47, 58, 50, 0.08);
+}
+
+.hero-photo-main::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  z-index: 1;
+  border: 1px solid rgba(255, 253, 248, 0.48);
+  border-radius: 34px;
+  pointer-events: none;
+}
+
+.hero-photo-main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(47, 58, 50, 0.02), rgba(47, 58, 50, 0.12)),
+    radial-gradient(circle at 22% 18%, rgba(255, 253, 248, 0.18), transparent 24rem);
+  pointer-events: none;
+}
+
+.hero-photo-main img {
+  transform-origin: center;
+}
+
+.hero-photo-small {
+  box-shadow:
+    0 24px 54px rgba(47, 58, 50, 0.18),
+    0 0 0 1px rgba(221, 228, 215, 0.7);
+}
+
+.hero-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+  align-items: start;
+  box-shadow:
+    0 30px 70px rgba(47, 58, 50, 0.16),
+    0 0 0 1px rgba(255, 253, 248, 0.54) inset;
+}
+
+.hero-card .card-label,
+.hero-card strong,
+.hero-card p {
+  grid-column: 2;
+}
+
+.hero-card-icon {
+  grid-row: 1 / span 3;
+  align-self: center;
+}
+
+.trust-pills {
+  gap: 10px;
+}
+
+.trust-pills span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 9px 15px;
+  border-color: rgba(111, 139, 106, 0.22);
+  background: rgba(255, 253, 248, 0.84);
+  color: #50614f;
+  box-shadow: 0 8px 20px rgba(47, 58, 50, 0.045);
+}
+
+.trust-pills span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--sage), var(--beige));
+  box-shadow: 0 0 0 4px rgba(111, 139, 106, 0.09);
+}
+
+.btn {
+  will-change: transform;
+}
+
+.btn-primary,
+.nav-cta {
+  box-shadow:
+    0 18px 38px rgba(47, 58, 50, 0.20),
+    inset 0 1px 0 rgba(255, 255, 255, 0.10);
+}
+
+.btn-primary:hover,
+.nav-cta:hover {
+  box-shadow:
+    0 24px 52px rgba(47, 58, 50, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.btn-secondary {
+  box-shadow: 0 10px 24px rgba(47, 58, 50, 0.045);
+}
+
+.services-grid {
+  align-items: stretch;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 24px 0 24px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(111, 139, 106, 0.28), transparent);
+  opacity: 0;
+  transition: opacity 0.28s var(--ease);
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}
+
+.service-image {
+  height: 270px;
+}
+
+.service-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 26px;
+}
+
+.service-content h3 {
+  font-size: 1.27rem;
+}
+
+.service-content p {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.service-card a {
+  width: fit-content;
+  min-height: 40px;
+  padding: 8px 13px;
+  border: 1px solid rgba(111, 139, 106, 0.22);
+  border-radius: 999px;
+  background: rgba(233, 239, 228, 0.55);
+  transition: background 0.22s var(--ease), border-color 0.22s var(--ease), transform 0.22s var(--ease);
+}
+
+.service-card a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(111, 139, 106, 0.34);
+  background: rgba(233, 239, 228, 0.82);
+}
+
+.service-badge {
+  box-shadow: 0 10px 26px rgba(47, 58, 50, 0.10);
+}
+
+.wellbeing-box {
+  align-items: stretch;
+}
+
+.wellbeing-copy {
+  align-self: center;
+}
+
+.wellbeing-points {
+  align-content: center;
+}
+
+.wellbeing-points article {
+  min-height: 128px;
+  align-items: center;
+  grid-template-columns: 78px 1fr;
+  padding: 20px 22px;
+}
+
+.wellbeing-points article h3 {
+  margin-bottom: 5px;
+}
+
+.wellbeing-points article p {
+  line-height: 1.55;
+}
+
+.wellbeing-points img {
+  align-self: center;
+  justify-self: center;
+}
+
+.cta-card {
+  align-items: center;
+  box-shadow:
+    0 34px 88px rgba(47, 58, 50, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.cta-card .eyebrow::before {
+  background: rgba(250, 248, 242, 0.55);
+}
+
+.cta-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+  color: rgba(250, 248, 242, 0.68);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.cta-card .btn-light {
+  min-width: 236px;
+  color: var(--sage-dark);
+  box-shadow:
+    0 20px 46px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.58);
+}
+
+.cta-card .btn-light:hover {
+  background: #ffffff;
+  box-shadow:
+    0 26px 58px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.66);
+}
+
+.site-footer {
+  background:
+    linear-gradient(180deg, var(--cream-2), rgba(233, 239, 228, 0.58));
+}
+
+.footer-inner {
+  align-items: center;
+  padding-block: 4px;
+}
+
+.footer-brand {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-actions a {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 13px;
+  border: 1px solid rgba(111, 139, 106, 0.18);
+  border-radius: 999px;
+  color: var(--sage-dark);
+  background: rgba(255, 253, 248, 0.72);
+  font-size: 0.9rem;
+  font-weight: 800;
+  transition: transform 0.22s var(--ease), background 0.22s var(--ease), border-color 0.22s var(--ease);
+}
+
+.footer-actions a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(111, 139, 106, 0.32);
+  background: var(--cream-2);
+}
+
+.hero-copy.reveal.visible {
+  transition-delay: 60ms !important;
+}
+
+.hero-visual.reveal.visible {
+  transition-delay: 160ms !important;
+}
+
+@media (max-width: 980px) {
+  .hero-grid {
+    gap: 54px;
+  }
+
+  .service-card {
+    display: grid;
+  }
+
+  .wellbeing-points article {
+    grid-template-columns: 72px 1fr;
+  }
+
+  .footer-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    max-width: 11ch;
+  }
+
+  .hero {
+    padding-top: 46px;
+  }
+
+  .hero-copy::before {
+    left: auto;
+    right: 10px;
+    top: -22px;
+  }
+
+  .trust-pills span {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card .card-label,
+  .hero-card strong,
+  .hero-card p {
+    grid-column: auto;
+  }
+
+  .hero-card-icon {
+    grid-row: auto;
+  }
+
+  .service-content {
+    padding: 23px;
+  }
+
+  .service-card a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wellbeing-points article {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .wellbeing-points img {
+    justify-self: start;
+  }
+
+  .cta-note {
+    font-size: 0.86rem;
+  }
+
+  .cta-card .btn-light {
+    min-width: 0;
+  }
+
+  .footer-inner {
+    gap: 18px;
+  }
+
+  .footer-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer-actions a {
+    justify-content: center;
+  }
+}
