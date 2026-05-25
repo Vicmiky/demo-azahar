@@ -975,3 +975,76 @@ section {
     scroll-margin-top: 86px;
   }
 }
+
+/* Iconografía secundaria premium: sin tocar el logo principal */
+.service-icon,
+.wellbeing-points img,
+.hero-card-icon,
+.cta-mini-icon {
+  object-fit: contain;
+  image-rendering: auto;
+  filter: none;
+}
+
+.service-icon {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 14px;
+}
+
+.wellbeing-points img {
+  width: 68px;
+  height: 68px;
+}
+
+.hero-card-icon {
+  width: 58px;
+  height: 58px;
+  margin-bottom: 10px;
+}
+
+.cta-mini-icon {
+  width: 62px;
+  height: 62px;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.whatsapp-float img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.service-card:hover .service-icon,
+.wellbeing-points article:hover img,
+.hero-card:hover .hero-card-icon {
+  transform: translateY(-3px) rotate(-2deg);
+  transition: transform 0.25s var(--ease);
+}
+
+@media (max-width: 640px) {
+  .service-icon,
+  .wellbeing-points img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .hero-card-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .cta-mini-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
